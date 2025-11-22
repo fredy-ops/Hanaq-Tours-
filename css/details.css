@@ -1,0 +1,165 @@
+/* Custom Styles for Tour Details Page */
+
+/* Header Image and Overlay */
+.tour-header-image {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.tour-header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-overlay h1 {
+    font-size: 3.5em;
+    margin-bottom: 5px;
+}
+
+/* Main Layout: Flexbox for Content + Sidebar */
+.details-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-content {
+    flex: 3; /* Content takes more space */
+}
+
+/* Key Facts */
+.key-facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #ff6f00; /* Orange accent */
+}
+
+.fact-value {
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+/* Itinerary (Accordion Style) */
+.itinerary-title, .included-title {
+    color: #0d47a1;
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.day-item input {
+    display: none;
+}
+
+.day-item label {
+    display: block;
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.day-item label:hover {
+    background-color: #ddd;
+}
+
+.day-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.day-item input:checked + label + .day-content {
+    max-height: 500px; /* Adjust height based on content */
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+/* Booking Sidebar Styles */
+.booking-sidebar {
+    flex: 1; /* Sidebar takes less space */
+    padding: 20px;
+    background-color: #fff8e1; /* Light yellow/gold background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Make it sticky for better user experience */
+    position: sticky;
+    top: 20px; 
+    height: fit-content;
+}
+
+.price-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.price-label {
+    font-size: 1em;
+    color: #333;
+}
+
+.price-value {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e65100; /* Orange/Gold Price */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cta-button {
+    /* Uses the shared button style defined in style.css */
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.guarantee {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
