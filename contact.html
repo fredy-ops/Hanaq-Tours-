@@ -91,3 +91,24 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+/* ========================================================== */
+/* MEDIA QUERIES - CONTACT PAGE RESPONSIVENESS (Max Width: 768px) */
+/* ========================================================== */
+@media (max-width: 768px) {
+    
+    /* Stacks the Form and Info sections vertically */
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    /* Full width for form and info sidebar */
+    .contact-form-section, .contact-info {
+        flex: auto;
+    }
+
+    /* Adjust font size for better reading */
+    .contact-header h2 {
+        font-size: 1.5em;
+    }
