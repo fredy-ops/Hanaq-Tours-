@@ -163,3 +163,50 @@
     font-style: italic;
     color: #555;
 }
+/* ========================================================== */
+/* MEDIA QUERIES - DETAILS PAGE RESPONSIVENESS (Max Width: 768px) */
+/* ========================================================== */
+@media (max-width: 768px) {
+    
+    /* 1. Main Layout Stacking */
+    /* Forces the main content and booking sidebar to stack */
+    .details-container {
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    /* 2. Tour Header Image Adjustment */
+    .tour-header-image {
+        height: 250px; /* Reduced height on mobile */
+    }
+
+    .header-overlay h1 {
+        font-size: 2em; /* Smaller title */
+    }
+    
+    /* 3. Booking Sidebar Adjustment */
+    /* Sidebar becomes full width and is no longer sticky */
+    .booking-sidebar {
+        width: 100%;
+        position: static; /* Removes the sticky effect on mobile */
+        order: -1; /* Puts the booking form *above* the itinerary */
+        margin-bottom: 20px;
+    }
+
+    .price-value {
+        font-size: 2em; /* Slightly smaller price text */
+    }
+
+    /* 4. Key Facts Grid Adjustment */
+    /* Key facts should only show one column on small phones */
+    .key-facts {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+    
+    /* 5. Form Input Width */
+    .form-group input {
+        width: 98%; /* Adjust to fit better */
+    }
+}
