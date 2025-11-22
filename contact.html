@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Hanaq Tours</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css"> </head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>HANAQ TOURS</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="experience.html">Hanaq Experience</a></li>
+                <li><a href="plan.html">Plan Your Trip</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="contact-header">
+            <h2>Let's Plan Your Route to the Andean Sky</h2>
+            <p>Our team of local experts is ready to answer your questions and create a customized itinerary.</p>
+        </div>
+
+        <div class="contact-container">
+            
+            <section class="contact-form-section">
+                <h3>Send Us a Message</h3>
+                <form id="contact-form" action="submit_form.php" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="name">Your Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message or Question:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Inquiry</button>
+                    <p class="form-note">We typically reply within 24 hours.</p>
+                </form>
+            </section>
+
+            <aside class="contact-info">
+                <h3>Get in Touch Directly</h3>
+                
+                <div class="info-item">
+                    <h4>Customer Support & Bookings</h4>
+                    <p>📧 Email: <a href="mailto:info@hanaqtours.com">info@hanaqtours.com</a></p>
+                    <p>📞 Phone: +51 987 654 321</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>WhatsApp Support (24/7)</h4>
+                    <p>Tap to Chat: <a href="https://wa.me/51987654321" target="_blank" class="whatsapp-link">Chat on WhatsApp</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h4>Office Location (Cusco)</h4>
+                    <p>Av. El Sol 100, Cusco, Peru</p>
+                    <div id="map-placeholder">
+                        <p>Map Placeholder - [Google Maps embed link]</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hanaq Tours. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
