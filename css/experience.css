@@ -1,0 +1,112 @@
+/* Custom Styles for Hanaq Experience Page */
+
+.experience-hero {
+    background-color: #f4f7f6;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 5px solid #ff6f00; /* Orange line accent */
+}
+
+.experience-hero h2 {
+    color: #0d47a1;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.experience-hero p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Story and Mission Layout (Image + Text) */
+.story-mission {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 40px;
+    align-items: center;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h3 {
+    color: #ff6f00; /* Orange accent for heading */
+    font-size: 1.8em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.story-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Pillars of Value Section */
+.pillars-section {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: #0d47a1;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.pillars-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillar {
+    flex: 1;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pillar .icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pillar h4 {
+    color: #0d47a1;
+    margin-top: 5px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 0; /* Remove top margin */
+}
+
+.cta-section h3 {
+    margin-top: 0;
+}
+
+.cta-button-alt {
+    /* Uses the orange button style from style.css */
+}
