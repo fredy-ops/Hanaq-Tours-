@@ -123,3 +123,65 @@
 .btn-details:hover {
     background-color: #e65100;
 }
+/* ========================================================== */
+/* MEDIA QUERIES - TOURS PAGE RESPONSIVENESS (Max Width: 768px) */
+/* ========================================================== */
+@media (max-width: 768px) {
+    
+    /* 1. Tours Container Stacked */
+    /* Forced stacking of the sidebar and results grid */
+    .tours-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* 2. Sidebar (Filters) Adjustment */
+    /* Filters should take full width and hide by default (optional, for advanced JS) */
+    .sidebar {
+        flex-basis: auto; /* Remove fixed width */
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    /* Make filter groups display in a single line (flex-wrap) for better use of space */
+    .filter-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-bottom: none;
+    }
+
+    .filter-group h4 {
+        width: 100%; /* Title takes full width */
+        margin-bottom: 5px;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 5px;
+    }
+    
+    .filter-group label {
+        display: inline-block; /* Allows filters to sit side-by-side */
+        margin-right: 15px;
+    }
+
+    .apply-filters {
+        margin-top: 15px;
+    }
+
+
+    /* 3. Tour Results Grid Adjustment */
+    /* Ensure the grid shows only one card per row on mobile */
+    .tour-results {
+        grid-template-columns: 1fr; /* Only one column */
+        gap: 20px;
+    }
+
+    /* Reduce card image size for better loading on mobile */
+    .tour-card img {
+        height: 180px;
+    }
+
+    /* Reduce font size for key details */
+    .card-content h3 {
+        font-size: 1.2em;
+    }
+}
