@@ -1,0 +1,83 @@
+/* Custom Styles for Plan Your Trip Page */
+
+.plan-hero {
+    background-color: #f4f7f6;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #0d47a1;
+}
+
+.plan-hero h2 {
+    color: #0d47a1;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.planning-tabs {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Tab Navigation Buttons */
+.tab-buttons {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #eee;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.2s;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-link:hover {
+    background-color: #ddd;
+}
+
+.tab-link.active {
+    background-color: white;
+    color: #ff6f00; /* Active tab color */
+    border: 2px solid #ccc;
+    border-bottom: 2px solid white; /* Hides the bottom border line */
+    margin-bottom: -2px;
+}
+
+/* Tab Content */
+.tab-content-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
+}
+
+.tab-content {
+    display: none; /* Hidden by default, controlled by JS */
+}
+
+.tab-content.active {
+    display: block; /* Shown when active */
+}
+
+.tab-content h3 {
+    color: #0d47a1;
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+}
+
+.tip-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tip-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
