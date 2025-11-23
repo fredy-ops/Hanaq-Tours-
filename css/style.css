@@ -1,94 +1,75 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+/* ========================================================== */
+/* HEADER & NAVIGATION STYLES (Final Look)                    */
+/* ========================================================== */
 
 header {
-    background-color: #0d47a1; /* Dark Andean Blue */
-    color: white;
-    padding: 15px 50px;
+    background-color: #000; /* Fondo negro como en el ejemplo */
+    color: white; 
+    padding: 10px 50px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espacia el logo y el menú */
     align-items: center;
 }
 
+/* Esconder el H1 antiguo */
+header h1 {
+    display: none; 
+}
+
+/* Estilos para el Logo (Hanaq-Tours Logo) */
+.logo-link {
+    display: inline-block;
+    height: auto; 
+}
+
+.header-logo {
+    height: 50px; /* Tamaño del logo en escritorio */
+    width: auto; 
+    display: block; 
+    padding: 5px 0; 
+}
+
+/* Estilos para los enlaces de navegación */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
-    color: white;
+    color: white; /* Enlaces blancos para el fondo oscuro */
     text-decoration: none;
     font-weight: bold;
-}
-
-/* Hero Section Styles */
-#hero {
-    /* Placeholder for the main background image */
-    background: url('../images/machupicchu-hero.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-#hero h2 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-}
-
-button {
-    background-color: #ff6f00; /* Sun/Gold Orange */
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    cursor: pointer;
-    font-size: 1.1em;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 8px 12px;
     transition: background-color 0.3s;
+    border-radius: 4px;
 }
 
-button:hover {
-    background-color: #e65100;
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Efecto hover sutil */
 }
+
+
 /* ========================================================== */
-/* MEDIA QUERIES - GLOBAL RESPONSIVENESS (Max Width: 768px)  */
+/* MEDIA QUERIES (Asegura la adaptabilidad en móvil)          */
 /* ========================================================== */
 @media (max-width: 768px) {
     
-    /* Header & Navigation Adjustments */
     header {
         flex-direction: column;
         padding: 15px 20px;
+        text-align: center;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
         margin-top: 10px;
-        text-align: center;
-    }
-    
-    /* Reduce Hero Text Size */
-    #hero {
-        height: 50vh;
     }
 
-    #hero h2 {
-        font-size: 2em; /* Smaller title on mobile */
+    .header-logo {
+        height: 40px; /* Logo más pequeño en móvil */
     }
-
-    /* General Padding and Margins */
-    main {
-        padding: 10px;
-    }
+}
